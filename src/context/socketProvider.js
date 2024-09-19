@@ -8,7 +8,7 @@ export const useSocket = () => {
 };
 
 export const SocketProvider = (props) => {
-  const socket = useMemo(() => io("https://gurucool-server.vercel.app/"));
+  const socket = useMemo(() => io("https://gurucool-server.vercel.app/"),[]);
   return (
     <SocketContext.Provider value={socket}>
       {props.children}

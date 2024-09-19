@@ -9,7 +9,7 @@ export const useSocket = () => {
 
 export const SocketProvider = (props) => {
   const socket = useMemo(() => 
-    io("https://gurucool-server.vercel.app/", {
+    io("https://gurucoolserver-1.onrender.com/", {
       transports: ["websocket"], // Use WebSocket only
       reconnection: true,        // Enable reconnection
       reconnectionAttempts: 5,   // Number of reconnection attempts
